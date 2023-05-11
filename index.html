@@ -19,21 +19,23 @@
     <!-- Main start -->
     <main class="site-main">
         <!-- Hero section start  -->
-        <section class="hero-section pb-4">
+        <section class="hero-section py-5">
             <div class="container">
-
-                <h2 class="user-list bg-light p-2 rounded">
-                    USER LIST
-                </h2>
-                <ul class="login-list d-flex flex-wrap  mt-5 list-unstyled ps-0">
+                <!-- <button class="btn-back-js btn btn-success">back</button> -->
+                <div class="wrappers mt-5  d-flex flex-column  justify-content-center">
+                    <h2 class="login-title mb-5 text-center">Welcome back!</h2>
+                    <form class="form-js-login" method="post" autocomplete="off">
+                        <input class="user-email-js  mb-5" type="email" name="user__email" placeholder="Enter your email" aria-label="Enter your email" required>
+                        <div class="eye-wrapper mb-5">
+                            <input class="user-password-js " type="password" name="user__password" placeholder="Enter your password" aria-label="Enter your password" required>
+                            <button class="btn-eyes btn" type="button"></button>
+                        </div>
+                        <button class="btn-submit btn btn-secondary w-100 mx-auto" type="submit">Login</button>
+                    </form>
                     
-                </ul>
-                <div class="d-flex flex-column align-items-center w-100">
-                    <button class="next-page btn btn-secondary fw-bold w-50">Next page</button>
-                     <button class="back-page btn btn-secondary fw-bold w-50 d-none">Back to page</button>
                 </div>
+                
             </div>
-            
         </section>
         <!-- Hero section finish  -->
         
@@ -45,18 +47,6 @@
         
     </footer>
     <!-- Footer finish -->
-    <template class="login-temp">
-        <li class="login-item d-flex justify-content-center flex-column align-items-center p-4">
-            <span class="login-id fw-bold"></span>
-            <img class="login-img img-thumbnail mb-3">
-            <p class="login-wrapper fw-bold text-light">
-                First name : <span class="login-first-name"></span>
-            </p>
-            <p class="login-wrapper fw-bold text-light">
-                Last name : <span class="login-last-name"></span>
-            </p>
-        </li>
-    </template>
-    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

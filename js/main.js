@@ -3,6 +3,8 @@ const elTemplate = document.querySelector(".login-temp").content;
 const nextPage = document.querySelector(".next-page");
 const backPage = document.querySelector(".back-page");
 
+
+
 function renderUser(arr,node){
     const elFragment = document.createDocumentFragment();
     arr.forEach(item => {

@@ -21,7 +21,7 @@ eyeBtn.addEventListener("mouseout", () => {
 // Get token
 const getToken = window.localStorage.getItem("login");
 if(getToken){
-    window.location.href = "index.html";
+    window.location.replace("/list.html")
 }
 
 // Try catch for get login
@@ -41,7 +41,7 @@ async function userLogin(){
     const data = await response.json();
     if(data.token){
         window.localStorage.setItem("login", data.token);
-        window.location.replace("/index.html");
+        window.location.replace("/list.html");
     }
     
 } catch (error) {
