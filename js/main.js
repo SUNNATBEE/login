@@ -2,8 +2,17 @@ const elUserList = document.querySelector(".login-list");
 const elTemplate = document.querySelector(".login-temp").content;
 const nextPage = document.querySelector(".next-page");
 const backPage = document.querySelector(".back-page");
+const signOut = document.querySelector(".sign-out");
 
+const getTokenData = window.localStorage.getItem("login");
+if(!getTokenData){
+  window.location.replace("/index.html");
+}
 
+signOut.addEventListener("click" , ()=>{
+  window.localStorage.removeItem("login");
+  window.location.replace("/index.html");
+})
 
 function renderUser(arr,node){
     const elFragment = document.createDocumentFragment();
