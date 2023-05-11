@@ -7,7 +7,7 @@ const eyeBtn = document.querySelector(".btn-eyes");
 // Show eye Password btn
 eyeBtn.addEventListener("click" , () =>{
     userPasswaordInput.type = "text";
-    eyeBtn.classList.add("show");
+    eyeBtn.classList.toggle("show");
 })
 eyeBtn.addEventListener("mousedown" , ()=>{
     userPasswaordInput.type = "text";
